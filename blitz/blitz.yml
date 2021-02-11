@@ -43,7 +43,8 @@ TestBgpShutdown:
                 banner: Verify bgp process is shutdown
                 command: show bgp all neighbor 10.10.10.2
                 include:
-                  - get_values('shutdown')
+#                 - get_values('shutdown')
+                  - contains('shutdown', regex=True)
 #                exclude:
 #                  - not_contains('up_time')
         - Revert_configuration:
