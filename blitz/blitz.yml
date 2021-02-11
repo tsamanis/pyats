@@ -1,0 +1,71 @@
+# Name of the testcase
+TestBgpShutdown:
+    # Location of the blitz trigger - always this same location for all blitz trigger
+    source:
+      pkg: genie.libs.sdk
+      class: triggers.blitz.blitz.Blitz
+
+    # Devices to run on - Default is uut
+    devices: ['R1']
+
+    # Field containing all the Testcase sections
+    test_sections:
+
+      # Section name - Can be any name, it will show as the first section of
+      # the testcase
+        - apply_configuration:
+            # List of actions
+            - configure:
+                device: R1
+                command: |
+                  router bgp 65001
+                  neighbor 10.10.10.2 shutdown
+            - sleep:
+                sleep_time: 5
+
+        # Second section name
+        - verify_configuration:
+            # Action #1
+            # Send show command to the device and verify if part
+            # of a string is in the output or not
+            - execute:
+                device: R1
+                command: show bgp all neighbor 10.10.10.2
+                include:
+                    # Verify Shutdown is within the show run output
+                  - 'Idle'
+            # Action #2
+            # Send show command and use our available parsers to make sure
+            # the bgp protocol state is shutdown
+            - parse:
+                device: R1
+                # All action supports banner field to add to the log
+                banner: Verify bgp process is shutdown
+                command: show bgp all neighbor 10.10.10.2
+                include:
+                  - get_values('shutdown')
+#                exclude:
+#                  - not_contains('up_time')
+        - Revert_configuration:
+            # Configure action, which accepts command as an argument
+            - configure:
+                device: R1
+                banner: Un-Shutting down bgp 65001
+                command: |
+                  router bgp 65001
+                  no neighbor 10.10.10.2 shutdown
+            - sleep:
+                sleep_time: 25
+        - verify_revert:
+            # Send show command and verify if part of a string is in the output or not
+            - execute:
+                device: R1
+                command: show bgp all neighbor 10.10.10.2 
+                include:
+                    # Verify Running is within the show run output
+                    - 'Established'
+            # Send show command and use our available parsers to make sure
+            # it is the bgp protocol state which is running
+            - parse:
+                device: R1
+                command: show bgp all neighbor 10.10.10.2

@@ -1,0 +1,15 @@
+0: osboxes: 2021-02-11T06:35:16: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Starting Reporter Unix socket server-----------------
+1: osboxes: 2021-02-11T06:35:16: %REPORTER-6-INFO: %[pid=14383][pname=ForkProcess-1]: Reporter server (socket /home/osboxes/pyATS/cleaners/Kleenex_2021Feb11_06:35:11.447719/reporter.sock) ready to receive requests----------------
+2: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Accepted new client connection
+3: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'ping', 'data': {}} from client
+4: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Returning pong to client
+5: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'register_client', 'data': {'pid': '14364', 'ppid': '3678'}} from client
+6: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Registered Client (pid: 14364, num_ctx: 0)
+7: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'start_testsuite', 'data': {'id': 'Kleenex', 'type': 'CleanSuite', 'testbed': 'tbed', 'submitter': 'root', 'cli': '/home/osboxes/pyATS/bin/pyats clean --testbed-file ../tbed.yml --device R1', 'host': 'osboxes'}} from Client (pid: 14364, num_ctx: 0)
+8: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'start_plugin', 'data': {'id': 'Standalone-1', 'name': 'Kleenex', 'type': 'Standalone', 'logfile': '/home/osboxes/pyATS/cleaners/Kleenex_2021Feb11_06:35:11.447719/Kleenex.log'}} from Client (pid: 14364, num_ctx: 1)
+9: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'stop_plugin', 'data': {}} from Client (pid: 14364, num_ctx: 2)
+10: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'stop_testsuite', 'data': {}} from Client (pid: 14364, num_ctx: 1)
+11: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received {'name': 'generate_report', 'data': {}} from Client (pid: 14364, num_ctx: 0)
+12: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Connection closed by Client (pid: 14364, num_ctx: 0)
+13: osboxes: 2021-02-11T06:35:17: %REPORTER-7-DEBUG: %[pid=14383][pname=ForkProcess-1]: Received SIGTERM
+14: osboxes: 2021-02-11T06:35:17: %REPORTER-6-INFO: %[pid=14383][pname=ForkProcess-1]: Stopping Reporter Server

@@ -1,0 +1,25 @@
+cleaners:
+    # This means to use the cleaner class `PyatsDeviceClean`
+    PyatsDeviceClean:
+        # The module is where the cleaner class above can be found
+        module: genie.libs.clean
+        # You can define many devices within the Clean YAML.
+# Any that are not in this list are not cleaned even if they are defined below.
+        devices: [R1]
+
+devices:
+    R1:
+        connect:
+            timeout: 100
+
+        reload:
+            reload_service_args:
+                timeout: 600
+
+        apply_configuration:
+            configuration: hostname R1
+
+        order:
+        - connect
+        - apply_configuration
+        - reload

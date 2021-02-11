@@ -1,0 +1,11 @@
+0: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.1/9][pid=14337][pname=MainProcess]: Kleenex has failed at an early stage (main).
+1: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.2/9][pid=14337][pname=MainProcess]: Traceback (most recent call last):
+2: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.3/9][pid=14337][pname=MainProcess]:   File "/home/osboxes/pyATS/lib/python3.8/site-packages/pyats/topology/loader/__init__.py", line 41, in load
+3: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.4/9][pid=14337][pname=MainProcess]:     return TestbedFileLoader(**init_kwargs).load(loadable, **kwargs)
+4: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.5/9][pid=14337][pname=MainProcess]:   File "src/pyats/utils/yaml/loader.py", line 99, in pyats.utils.yaml.loader.Loader.load
+5: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.6/9][pid=14337][pname=MainProcess]:   File "src/pyats/topology/loader/base.py", line 149, in pyats.topology.loader.base.TestbedFileLoader.load_arbitrary
+6: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.7/9][pid=14337][pname=MainProcess]:   File "src/pyats/utils/yaml/loader.py", line 186, in pyats.utils.yaml.loader.Loader.load_arbitrary
+7: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.8/9][pid=14337][pname=MainProcess]: pyats.utils.yaml.exceptions.LoadError: Content of 'tbed.yml' failed to load into a dict.
+8: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[part=0.9/9][pid=14337][pname=MainProcess]: Got: tbed.yml
+9: osboxes: 2021-02-11T06:34:54: %KLEENEX-3-ERROR: %[pid=14337][pname=MainProcess]: Failed to send email.
+10: osboxes: 2021-02-11T06:34:54: %CLI-6-INFO: %[pid=14337][pname=MainProcess]: 

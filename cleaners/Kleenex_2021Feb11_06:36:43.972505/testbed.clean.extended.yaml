@@ -1,0 +1,20 @@
+bringup: {}
+cleaners:
+  PyatsDeviceClean:
+    class: <class 'genie.libs.clean.clean.PyatsDeviceClean'>
+    devices:
+    - R1
+devices:
+  R1:
+    apply_configuration:
+      configuration: hostname PE1
+    connect:
+      timeout: 100
+    images: []
+    order:
+    - connect
+    - apply_configuration
+    - reload
+    reload:
+      reload_service_args:
+        timeout: 600

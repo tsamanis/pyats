@@ -1,0 +1,7 @@
+0: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[part=0.1/5][pid=14409][pname=MainProcess]: Kleenex has failed at an early stage (main).
+1: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[part=0.2/5][pid=14409][pname=MainProcess]: Traceback (most recent call last):
+2: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[part=0.3/5][pid=14409][pname=MainProcess]:   File "/usr/lib/python3.8/shutil.py", line 261, in copyfile
+3: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[part=0.4/5][pid=14409][pname=MainProcess]:     with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+4: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[part=0.5/5][pid=14409][pname=MainProcess]: FileNotFoundError: [Errno 2] No such file or directory: 'cleaners.yml'
+5: osboxes: 2021-02-11T06:36:20: %KLEENEX-3-ERROR: %[pid=14409][pname=MainProcess]: Failed to send email.
+6: osboxes: 2021-02-11T06:36:20: %CLI-6-INFO: %[pid=14409][pname=MainProcess]: 

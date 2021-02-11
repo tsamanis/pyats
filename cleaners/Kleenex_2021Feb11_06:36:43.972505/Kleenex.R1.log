@@ -1,0 +1,204 @@
+1: osboxes: 2021-02-11T06:36:47: %KLEENEX-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Starting to clean device 'R1' using 'PyatsDeviceClean'
+2: osboxes: 2021-02-11T06:36:48: %AETEST-6-INFO: %[part=2.1/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+3: osboxes: 2021-02-11T06:36:48: %AETEST-6-INFO: %[part=2.2/3][pid=14473][pname=KleenexWorker-2]: |                           Starting section connect                           |
+4: osboxes: 2021-02-11T06:36:48: %AETEST-6-INFO: %[part=2.3/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+5: osboxes: 2021-02-11T06:36:48: %GENIE-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Checking connection to device: R1
+6: osboxes: 2021-02-11T06:36:48: %GENIE-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Performing the last attempt
+7: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 logfile /tmp/R1-cli-20210211T063648071.log +++
+8: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ Unicon plugin ios +++
+Trying 10.10.10.1...
+
+10: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ connection to spawn: telnet 10.10.10.1, id: 140550211490720 +++
+11: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: connection to R1
+Connected to 10.10.10.1.
+Escape character is '^]'.
+
+************************************************
+*                                              *
+*      THIS ROUTER IS BUILT FOR NSO DEMO       *
+*                                              *
+************************************************
+
+User Access Verification
+
+Username: cisco
+Password: 
+
+R1>
+16: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Learned hostname(s) : 'R1'.
+17: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ initializing handle +++
+enable
+Password: 
+R1#
+23: osboxes: 2021-02-11T06:36:48: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 with alias 'cli': executing command 'term length 0' +++
+term length 0
+R1#
+25: osboxes: 2021-02-11T06:36:49: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 with alias 'cli': executing command 'term width 0' +++
+term width 0
+R1#
+28: osboxes: 2021-02-11T06:36:49: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 with alias 'cli': executing command 'show version' +++
+show version
+Cisco IOS Software, 7200 Software (C7200-ADVIPSERVICESK9-M), Version 15.2(4)M11, RELEASE SOFTWARE (fc2)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2016 by Cisco Systems, Inc.
+Compiled Sun 16-Oct-16 07:53 by prod_rel_team
+
+ROM: ROMMON Emulation Microcode
+BOOTLDR: 7200 Software (C7200-ADVIPSERVICESK9-M), Version 15.2(4)M11, RELEASE SOFTWARE (fc2)
+
+R1 uptime is 2 hours, 12 minutes
+System returned to ROM by unknown reload cause - suspect boot_data[BOOT_COUNT] 0x0, BOOT_COUNT 0, BOOTDATA 19
+System restarted at 11:23:58 UTC Thu Feb 11 2021
+System image file is "tftp://255.255.255.255/unknown"
+Last reload type: Normal Reload
+Last reload reason: Unknown reason
+
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+Cisco 7206VXR (NPE400) processor (revision A) with 491520K/32768K bytes of memory.
+Processor board ID 4279256517
+R7000 CPU at 150MHz, Implementation 39, Rev 2.1, 256KB L2 Cache
+6 slot VXR midplane, Version 2.1
+
+Last reset from power-on
+
+PCI bus mb0_mb1 (Slots 0, 1, 3 and 5) has a capacity of 600 bandwidth points.
+Current configuration on bus mb0_mb1 has a total of 1200 bandwidth points. 
+The set of PA-2FE, PA-POS-2OC3, and I/O-2FE qualify for "half 
+bandwidth points" consideration, when full bandwidth point counting 
+results in oversubscription, under the condition that only one of the 
+two ports is used. With this adjustment, current configuration on bus 
+mb0_mb1 has a total of 1200 bandwidth points. 
+This configuration has oversubscripted the PCI bus and is not a 
+supported configuration. 
+
+PCI bus mb2 (Slots 2, 4, 6) has a capacity of 600 bandwidth points.
+Current configuration on bus mb2 has a total of 800 bandwidth points 
+The set of PA-2FE, PA-POS-2OC3, and I/O-2FE qualify for "half 
+bandwidth points" consideration, when full bandwidth point counting 
+results in oversubscription, under the condition that only one of the 
+two ports is used. With this adjustment, current configuration on bus 
+mb2 has a total of 800 bandwidth points. 
+This configuration has oversubscripted the PCI bus and is not a 
+supported configuration. 
+
+Please refer to the following document "Cisco 7200 Series Port Adaptor
+Hardware Configuration Guidelines" on Cisco.com <http://www.cisco.com>
+for c7200 bandwidth points oversubscription and usage guidelines.
+
+WARNING: PCI bus mb0_mb1 Exceeds 600 bandwidth points
+WARNING: PCI bus mb2 Exceeds 600 bandwidth points
+
+1 Ethernet interface
+5 Gigabit Ethernet interfaces
+509K bytes of NVRAM.
+
+8192K bytes of Flash internal SIMM (Sector size 256K).
+
+
+Configuration register is 0x2102
+
+R1#
+34: osboxes: 2021-02-11T06:36:49: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 with alias 'cli': configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#no logging console
+R1(config)#line console 0
+R1(config-line)#exec-timeout 0
+R1(config-line)#end
+R1#
+51: osboxes: 2021-02-11T06:36:49: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Passed reason: Successfully connected to 'R1'
+52: osboxes: 2021-02-11T06:36:49: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of section connect is => PASSED
+53: osboxes: 2021-02-11T06:36:49: %AETEST-6-INFO: %[part=53.1/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+54: osboxes: 2021-02-11T06:36:49: %AETEST-6-INFO: %[part=53.2/3][pid=14473][pname=KleenexWorker-2]: |                     Starting section apply_configuration                     |
+55: osboxes: 2021-02-11T06:36:49: %AETEST-6-INFO: %[part=53.3/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+56: osboxes: 2021-02-11T06:36:49: %GENIE-6-INFO: %[part=56.1/4][pid=14473][pname=KleenexWorker-2]: Section steps:
+57: osboxes: 2021-02-11T06:36:49: %GENIE-6-INFO: %[part=56.2/4][pid=14473][pname=KleenexWorker-2]: 1- Copy/Apply configuration to/on the device
+58: osboxes: 2021-02-11T06:36:49: %GENIE-6-INFO: %[part=56.3/4][pid=14473][pname=KleenexWorker-2]: 2- Copy running-config to startup-config
+59: osboxes: 2021-02-11T06:36:49: %GENIE-6-INFO: %[part=56.4/4][pid=14473][pname=KleenexWorker-2]: 3- Sleep to stabilize configuration on the device
+60: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=60.1/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+61: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=60.2/3][pid=14473][pname=KleenexWorker-2]: :        Starting STEP 1: Apply configuration to device R1 after reload        :
+62: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=60.3/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+63: osboxes: 2021-02-11T06:36:50: %GENIE-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Applying configuration on 'R1'
+64: osboxes: 2021-02-11T06:36:50: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ R1 with alias 'cli': configure +++
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#hostname PE1
+PE1(config)#end
+PE1#
+74: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Passed reason: Successfully applied configuration to device R1 
+75: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of STEP 1: Apply configuration to device R1 after reload is => PASSED
+76: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=76.1/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+77: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=76.2/3][pid=14473][pname=KleenexWorker-2]: :     Starting STEP 2: Copy running-config to startup-config on device R1      :
+78: osboxes: 2021-02-11T06:36:50: %AETEST-6-INFO: %[part=76.3/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+79: osboxes: 2021-02-11T06:36:52: %GENIE-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Starting a timeout with maximum time of 300 seconds with interval of 60 seconds, Test case will fail after the maximum time set
+80: osboxes: 2021-02-11T06:36:52: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ PE1 with alias 'cli': executing command 'copy running-config startup-config' +++
+copy running-config startup-config
+Destination filename [startup-config]? 
+Warning: Attempting to overwrite an NVRAM configuration previously written
+by a different version of the system image.
+Overwrite the previous NVRAM configuration?[confirm]
+Building configuration...
+[OK]
+PE1#
+91: osboxes: 2021-02-11T06:36:54: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Passed reason: Successfully copied running-config to startup-config on R1
+92: osboxes: 2021-02-11T06:36:54: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of STEP 2: Copy running-config to startup-config on device R1 is => PASSED
+93: osboxes: 2021-02-11T06:36:54: %AETEST-6-INFO: %[part=93.1/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+94: osboxes: 2021-02-11T06:36:54: %AETEST-6-INFO: %[part=93.2/3][pid=14473][pname=KleenexWorker-2]: :        Starting STEP 3: Allow configuration to stabilize on device R1        :
+95: osboxes: 2021-02-11T06:36:54: %AETEST-6-INFO: %[part=93.3/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+96: osboxes: 2021-02-11T06:36:54: %GENIE-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Sleeping for '10' seconds
+97: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Passed reason: Successfully applied configuration after reloading device R1
+98: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of STEP 3: Allow configuration to stabilize on device R1 is => PASSED
+99: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Passed reason: Successfully applied configuration after reloading device R1
+100: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=100.1/3][pid=14473][pname=KleenexWorker-2]: +----------------------------------------------------------+
+101: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=100.2/3][pid=14473][pname=KleenexWorker-2]: |                       STEPS Report                       |
+102: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=100.3/3][pid=14473][pname=KleenexWorker-2]: +----------------------------------------------------------+
+103: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: STEP 1 - Apply configuration to device R1 after reload    Passed
+104: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: STEP 2 - Copy running-config to startup-config on device R1    Passed
+105: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: STEP 3 - Allow configuration to stabilize on device R1    Passed
+106: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: ------------------------------------------------------------
+107: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of section apply_configuration is => PASSED
+108: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=108.1/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+109: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=108.2/3][pid=14473][pname=KleenexWorker-2]: |                           Starting section reload                            |
+110: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=108.3/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+111: osboxes: 2021-02-11T06:37:04: %GENIE-6-INFO: %[part=111.1/5][pid=14473][pname=KleenexWorker-2]: Section steps:
+112: osboxes: 2021-02-11T06:37:04: %GENIE-6-INFO: %[part=111.2/5][pid=14473][pname=KleenexWorker-2]: 1- Reload the device
+113: osboxes: 2021-02-11T06:37:04: %GENIE-6-INFO: %[part=111.3/5][pid=14473][pname=KleenexWorker-2]: 2- Disconnect from the device
+114: osboxes: 2021-02-11T06:37:04: %GENIE-6-INFO: %[part=111.4/5][pid=14473][pname=KleenexWorker-2]: 3- Reconnect to the device
+115: osboxes: 2021-02-11T06:37:04: %GENIE-6-INFO: %[part=111.5/5][pid=14473][pname=KleenexWorker-2]: 4- Verify all modules are in stable state after reload
+116: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=116.1/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+117: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=116.2/3][pid=14473][pname=KleenexWorker-2]: :                         Starting STEP 1: Reload 'R1'                         :
+118: osboxes: 2021-02-11T06:37:04: %AETEST-6-INFO: %[part=116.3/3][pid=14473][pname=KleenexWorker-2]: +..............................................................................+
+119: osboxes: 2021-02-11T06:37:04: %UNICON-6-INFO: %[pid=14473][pname=KleenexWorker-2]: +++ PE1 with alias 'cli': reload +++
+reload
+Proceed with reload? [confirm]
+Connection closed by foreign host.
+
+123: osboxes: 2021-02-11T06:37:05: %AETEST-3-ERROR: %[part=123.1/2][pid=14473][pname=KleenexWorker-2]: Failed reason: 'R1' failed to reload within 600 seconds.
+124: osboxes: 2021-02-11T06:37:05: %AETEST-3-ERROR: %[part=123.2/2][pid=14473][pname=KleenexWorker-2]: Error: Reload failed ('Unable to read. Connection closed or not available', OSError(5, 'Input/output error'))
+125: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of STEP 1: Reload 'R1' is => FAILED
+126: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[part=126.1/3][pid=14473][pname=KleenexWorker-2]: +----------------------------------------------------------+
+127: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[part=126.2/3][pid=14473][pname=KleenexWorker-2]: |                       STEPS Report                       |
+128: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[part=126.3/3][pid=14473][pname=KleenexWorker-2]: +----------------------------------------------------------+
+129: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: STEP 1 - Reload 'R1'                                  Failed
+130: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: ------------------------------------------------------------
+131: osboxes: 2021-02-11T06:37:05: %AETEST-6-INFO: %[pid=14473][pname=KleenexWorker-2]: The result of section reload is => FAILED
+132: osboxes: 2021-02-11T06:37:05: %GENIE-3-ERROR: %[part=132.1/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+133: osboxes: 2021-02-11T06:37:05: %GENIE-3-ERROR: %[part=132.2/3][pid=14473][pname=KleenexWorker-2]: |                       *** Terminating Genie Clean ***                        |
+134: osboxes: 2021-02-11T06:37:05: %GENIE-3-ERROR: %[part=132.3/3][pid=14473][pname=KleenexWorker-2]: +------------------------------------------------------------------------------+
+135: osboxes: 2021-02-11T06:37:18: %KLEENEX-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Finished cleaning device 'R1' using 'PyatsDeviceClean'.

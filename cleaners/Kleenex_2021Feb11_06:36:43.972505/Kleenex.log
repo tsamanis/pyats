@@ -1,0 +1,35 @@
+0: osboxes: 2021-02-11T06:36:46: %KLEENEX-4-WARNING: %[pid=14453][pname=MainProcess]: No clean image provided for device R1
+1: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=1.1/3][pid=14453][pname=MainProcess]: +------------------------------------------------------------------------------+
+2: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=1.2/3][pid=14453][pname=MainProcess]: |                              Clean Information                               |
+3: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=1.3/3][pid=14453][pname=MainProcess]: +------------------------------------------------------------------------------+
+4: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.1/8][pid=14453][pname=MainProcess]: {'bringup': {},
+5: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.2/8][pid=14453][pname=MainProcess]:  'cleaners': {'PyatsDeviceClean': {'class': <class 'genie.libs.clean.clean.PyatsDeviceClean'>,
+6: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.3/8][pid=14453][pname=MainProcess]:                                    'devices': ['R1']}},
+7: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.4/8][pid=14453][pname=MainProcess]:  'devices': {'R1': {'apply_configuration': {'configuration': 'hostname PE1'},
+8: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.5/8][pid=14453][pname=MainProcess]:                     'connect': {'timeout': 100},
+9: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.6/8][pid=14453][pname=MainProcess]:                     'images': [],
+10: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.7/8][pid=14453][pname=MainProcess]:                     'order': ['connect', 'apply_configuration', 'reload'],
+11: osboxes: 2021-02-11T06:36:46: %KLEENEX-6-INFO: %[part=4.8/8][pid=14453][pname=MainProcess]:                     'reload': {'reload_service_args': {'timeout': 600}}}}}
+12: osboxes: 2021-02-11T06:36:47: %KLEENEX-6-INFO: %[pid=14453][pname=MainProcess]: Executing kleenex on testbed: tbed
+13: osboxes: 2021-02-11T06:36:47: %KLEENEX-6-INFO: %[pid=14453][pname=MainProcess]:    clean files: ['clean.yml']
+
+14: osboxes: 2021-02-11T06:36:47: %KLEENEX-6-INFO: %[pid=14453][pname=MainProcess]:    devices to clean: ['R1']
+0: osboxes: 2021-02-11T06:36:47: %LOG-6-INFO: %[pid=14473][pname=KleenexWorker-2]: Forked process 14473 started, log: /home/osboxes/pyATS/cleaners/Kleenex_2021Feb11_06:36:43.972505/Kleenex.R1.log
+15: osboxes: 2021-02-11T06:37:19: %ROOT-6-INFO: %[pid=14453][pname=MainProcess]: Clean finished!
+16: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.1/15][pid=14453][pname=MainProcess]: Kleenex has failed at an early stage (main).
+17: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.2/15][pid=14453][pname=MainProcess]: pyats.kleenex.exceptions.CleanException: 
+18: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.3/15][pid=14453][pname=MainProcess]: 
+19: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.4/15][pid=14453][pname=MainProcess]: Traceback (most recent call last):
+20: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.5/15][pid=14453][pname=MainProcess]:   File "/home/osboxes/pyATS/lib/python3.8/site-packages/genie/libs/clean/clean.py", line 264, in clean
+21: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.6/15][pid=14453][pname=MainProcess]:     super().clean(device, reporter, *args, **kwargs)
+22: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.7/15][pid=14453][pname=MainProcess]:   File "/home/osboxes/pyATS/lib/python3.8/site-packages/genie/libs/clean/clean.py", line 258, in clean
+23: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.8/15][pid=14453][pname=MainProcess]:     raise Exception("Clean {result}.".format(result=str(result)))
+24: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.9/15][pid=14453][pname=MainProcess]: Exception: Clean failed.
+25: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.10/15][pid=14453][pname=MainProcess]: 
+26: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.11/15][pid=14453][pname=MainProcess]: 
+27: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.12/15][pid=14453][pname=MainProcess]: The above exception was the direct cause of the following exception:
+28: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.13/15][pid=14453][pname=MainProcess]: 
+29: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.14/15][pid=14453][pname=MainProcess]: Traceback (most recent call last):
+30: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[part=16.15/15][pid=14453][pname=MainProcess]: pyats.kleenex.exceptions.CleanWorkerException: ('R1', 'Clean failed.')
+31: osboxes: 2021-02-11T06:37:19: %KLEENEX-3-ERROR: %[pid=14453][pname=MainProcess]: Failed to send email.
+32: osboxes: 2021-02-11T06:37:19: %CLI-6-INFO: %[pid=14453][pname=MainProcess]: 
