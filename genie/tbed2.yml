@@ -1,0 +1,27 @@
+devices:
+  R1:
+    connections:
+      cli:
+        ip: 10.10.10.1
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: iosxr
+    type: iosxr
+  R2:
+    connections:
+      cli:
+        ip: 10.10.10.2
+        protocol: telnet
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+    os: ios
+    type: ios
