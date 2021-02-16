@@ -6,10 +6,10 @@ devices:
         protocol: telnet
     credentials:
       default:
-        password: cisco
-        username: cisco
+        password: vagrant
+        username: vagrant
       enable:
-        password: cisco
+        password: vagrant
     os: iosxr
     type: iosxr
   R2:
