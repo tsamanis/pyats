@@ -22,7 +22,7 @@ device.connect()
 output = device.execute('show interface summary')
 
 # Parse tabular data
-result = parsergen.oper_fill_tabular(header_fields=["Interface", "IHQ", "IQD", "OHQ", "OQD", "RXBS", "RXPS", "TXBS", "TXPS", "TRTL"], label_fields=["INTERFACE", "IHQ", "IQD", "OHQ", "OQD", "RXBS", "RXPS", "TXBS", "TXPS", "TRTL"], index=[0], device_output=output, device_os='ios')
+result = parsergen.oper_fill_tabular(header_fields=["Interface", "IHQ", "IQD", "OHQ", "OQD", "RXBS", "RXPS", "TXBS", "TXPS", "TRTL"], label_fields=["INTERFACE", "IHQ", "IQD", "OHQ", "OQD", "RXBS", "RXPS", "TXBS", "TXPS", "TRTL"], index=[0], delimiter="*",device_output=output, device_os='ios')
 
 #Print the result
 pprint.pprint(result.entries)
