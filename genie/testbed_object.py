@@ -10,6 +10,7 @@ for dev in testbed.devices:
  device = testbed.devices[dev]
  device.connect()
  output = device.parse('show version')
+
 '''
 https://pubhub.devnetcloud.com/media/genie-docs/docs/userguide/Conf/user/topology.html?highlight=testbed%20yaml%20file
 +--------------------------------------------------------------------------+
