@@ -5,4 +5,8 @@ testbed_object.py --> Loop in a testbed object to access all devices in the topo
                       parse a command
 add_interface.py  --> add an interface with corresponding parameters configure/unconfigure
 
+Topology
+
+pyATS --> IOS-XR Device --> IOS Device --> NAT Cloud
+
 ###########################################################################################
