@@ -8,17 +8,16 @@ from genie.utils import Dq
 testbed = testbed.load('tbed2.yml')
 
 # Find the device I want to connect to
-device = testbed.devices['R2']
+device = testbed.devices['R1']
 
 # Connect to it
 device.connect()
 
-# Instantiate the OPS object
+# Parse output
 output = device.parse("show interfaces")
-for inf in output:
- inter=output[inf]
- val=Dq(output).contains('in_errors').get_values('in_errors')
- if val!=0:
-   print(f"Interface {inter} input Errors: {val}")
-#print(Dq(output).contains('in_errors'))
+
+#Count interfce in up state
+active_interfaces=output.q.contains_key_value('enabled',True).count()
+print(f"Number of active interfaces {active_interfaces}")
+
 
